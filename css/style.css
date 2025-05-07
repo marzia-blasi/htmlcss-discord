@@ -59,7 +59,9 @@ body {
 }
 
 .col40 {
-  width: 40%;
+  width: 40%; /* ma andrebbe tolto?  */
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 /* end region common  */
@@ -93,6 +95,10 @@ h1 {
   font-size: 2.9rem;
 }
 
+h2 {
+  font-size: 1.9rem;
+}
+
 /* uso le classi mac e pc perchè magari il bottone mi può essere utile anche per gli altri bottoni */
 p,
 .dark,
@@ -120,6 +126,6 @@ div.light {
 }
 
 .invite {
-  background-image: url(/img/wave.svg);
-  opacity: 0.2;
+  /* background-image: url(/img/wave.svg); */
+  /* opacity: 0.2; */
 }
