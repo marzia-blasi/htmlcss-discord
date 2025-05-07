@@ -87,7 +87,7 @@ ul {
 }
 
 main .jumbotron {
-  background-image: url(jumbo.png);
+  background-image: url(../img/jumbo.png);
   background-size: cover;
   padding: 2rem 0;
 }
