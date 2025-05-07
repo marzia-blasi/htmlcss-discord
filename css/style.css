@@ -9,10 +9,6 @@
     background-color: #83b590;
     height: 100px;
   }
-
-  .container-small {
-    height: 400px;
-  }
 }
 /* end region debug */
 
@@ -29,13 +25,13 @@
   box-sizing: border-box;
 }
 
-/* Utilities 
-
+/* Utilities */
 
 body {
   min-width: 1440px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-*/
+
 .d-flex {
   display: flex;
 }
@@ -47,7 +43,8 @@ body {
 }
 
 .container-small {
-  max-width: 900px;
+  min-height: 400px;
+  max-width: 703px;
   width: 65%;
   margin: 0 auto;
   justify-content: center;
@@ -82,21 +79,30 @@ ul {
   list-style: none;
 }
 
-/* .jumbotron {
-  background-image: url(/css/jumbo.png);
-} */
-
 main .jumbotron {
-  background-image: url(/css/jumbo.png);
+  background-image: url(/img/jumbo.png);
   background-size: cover;
   padding: 2rem 0;
+  color: white;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 2.9rem;
+}
+
+/* uso le classi mac e pc perchè magari il bottone mi può essere utile anche per gli altri bottoni */
+p,
+.mac,
+.pc {
+  font-size: 1.4rem;
+}
+
+.bottone {
+  border-radius: 8px;
 }
 
 .invite {
   background-image: url(/img/wave.svg);
   opacity: 0.2;
-}
-
-.bottone {
-  border-radius: 8px;
 }
