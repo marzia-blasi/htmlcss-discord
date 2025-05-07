@@ -2,24 +2,16 @@
 
 .debug {
   * {
-    border: 1px solid red;
-  }
-  header {
-    background-color: aqua;
-  }
-  main {
-    background-color: blue;
-    height: 400px;
-    padding: 30px;
-  }
-  .jumbotron {
-    background-color: aliceblue;
-    height: 400px;
+    border: 1px solid #0c0101;
   }
 
   footer {
-    background-color: rgb(71, 215, 107);
+    background-color: #83b590;
     height: 100px;
+  }
+
+  .container-small {
+    height: 400px;
   }
 }
 /* end region debug */
@@ -45,4 +37,58 @@
   margin: 0 auto;
 }
 
+.container-small {
+  max-width: 900px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+body {
+  min-width: 1440px;
+}
+
 /* end region common  */
+
+header {
+  background-color: var(--header-primary);
+}
+
+.logo,
+.login {
+  flex-grow: 1;
+}
+
+ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* .jumbotron {
+  background-image: url(/css/jumbo.png);
+} */
+
+main .jumbotron {
+  background-image: url(/css/jumbo.png);
+  background-size: contain;
+  padding: 2rem 0;
+}
+
+.invite {
+  background-image: url(/img/wave.svg);
+  opacity: 0.2;
+}
