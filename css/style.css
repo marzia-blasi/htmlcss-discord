@@ -16,6 +16,8 @@
 /* ma la differenza tra utilities e common ?  */
 :root {
   --header-primary: #255ee9ff;
+  --botton-dark: #23272aff;
+  --botton-light: #fff;
 }
 
 /* elinina margini/padding/bordi etc */
@@ -93,13 +95,28 @@ h1 {
 
 /* uso le classi mac e pc perchè magari il bottone mi può essere utile anche per gli altri bottoni */
 p,
-.mac,
-.pc {
+.dark,
+.light {
   font-size: 1.4rem;
 }
 
+p {
+  margin-bottom: 30px;
+}
+
+div.dark {
+  background-color: var(--botton-dark);
+}
+
+div.light {
+  background-color: var(--botton-light);
+  color: var(--botton-dark);
+  margin-right: 20px; /*se io volessi farlo con flex? Mi vado a complicare troppo?*/
+}
+
 .bottone {
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 50px;
 }
 
 .invite {
