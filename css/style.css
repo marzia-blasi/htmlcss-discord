@@ -29,7 +29,16 @@
   box-sizing: border-box;
 }
 
-/* Utilities */
+/* Utilities 
+
+
+body {
+  min-width: 1440px;
+}
+*/
+.d-flex {
+  display: flex;
+}
 
 .container {
   max-width: 1200px;
@@ -41,22 +50,17 @@
   max-width: 900px;
   width: 65%;
   margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.col-60 {
+.col60 {
   width: 60%;
 }
 
-.col-40 {
+.col40 {
   width: 40%;
-}
-
-body {
-  min-width: 1440px;
 }
 
 /* end region common  */
@@ -84,11 +88,15 @@ ul {
 
 main .jumbotron {
   background-image: url(/css/jumbo.png);
-  background-size: contain;
+  background-size: cover;
   padding: 2rem 0;
 }
 
 .invite {
   background-image: url(/img/wave.svg);
   opacity: 0.2;
+}
+
+.bottone {
+  border-radius: 8px;
 }
