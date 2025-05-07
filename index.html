@@ -7,7 +7,11 @@
     <title>Discord</title>
   </head>
 
+  <!-- class debug direttamente a body così la tolgo una volta sola -->
+
   <body class="debug">
+    <!-- devo aggiungere d-flex -->
+    <!-- Header -->
     <header>
       <nav class="container">
         <ul>
@@ -18,9 +22,36 @@
         </ul>
       </nav>
     </header>
+    <!-- main -->
+    <!-- composto da jumbo+sezioni+speciale+galleria -->
+    <main>
+      <div class="jumbotron">
+        <div class="container-small"></div>
+      </div>
 
-    <section>div.</section>
+      <!-- sezioni uguali -->
+      <section class="invite">
+        <div class="col60">immagini</div>
+        <div class="col40">testo</div>
+      </section>
+      <!-- pensavo che questa avrebbe usato row reverse... invece abbiamo solo cambiato le classi -->
+      <section class="inverso">
+        <div class="col40">immagini</div>
+        <div class="col60">testo</div>
+      </section>
+      <!-- sezioni uguali -->
+      <section class="fandom">
+        <div class="col60">immagini</div>
+        <div class="col40">testo</div>
+      </section>
+      <!-- sezione speciale -->
+      <section class="special">
+        <div class="container">speciale grande</div>
+      </section>
+    </main>
 
+    <!-- footer -->
+    <!-- devo dividere in due parti - lo faccio dopo-->
     <footer></footer>
   </body>
 </html>

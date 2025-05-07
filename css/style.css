@@ -1,5 +1,48 @@
+/* region debug */
+
 .debug {
   * {
+    border: 1px solid red;
+  }
+  header {
+    background-color: aqua;
+  }
+  main {
     background-color: blue;
+    height: 400px;
+    padding: 30px;
+  }
+  .jumbotron {
+    background-color: aliceblue;
+    height: 400px;
+  }
+
+  footer {
+    background-color: rgb(71, 215, 107);
+    height: 100px;
   }
 }
+/* end region debug */
+
+/* region common  */
+/* ma la differenza tra utilities e common ?  */
+:root {
+  --header-primary: #255ee9ff;
+}
+
+/* elinina margini/padding/bordi etc */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* end region common  */
