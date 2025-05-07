@@ -1,3 +1,5 @@
-* {
-  background-color: blue;
+.debug {
+  * {
+    background-color: blue;
+  }
 }
